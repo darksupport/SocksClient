@@ -134,7 +134,7 @@ namespace TestTypeApp
             }
         }
 
-        public List<CManufacture> SaveList
+        public List<CManufacture> SaveList //зачем эти листы показывать наружу, они нужны только самой модели?
         {
             get
             {
