@@ -16,8 +16,9 @@ namespace TestTypeApp
         {
             InitializeComponent();
         }
-
-        private void typesToolStripMenuItem_Click(object sender, EventArgs e)
+//здесь у нас выходит главная форма в которой связаны модель вью и презентер. 
+//Думаю что стоит здесь развязать зависимости через контейнер      
+        private void typesToolStripMenuItem_Click(object sender, EventArgs e) 
         {
             TypeRef.TypeServiceClient service = new TypeRef.TypeServiceClient();
             ModelType model = new ModelType(service);
